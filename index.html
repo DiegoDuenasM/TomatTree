@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TomatTree — Logística B2B de tomate de árbol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-tomattree py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">TOMAT<span>TREE</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proceso">Cómo funciona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item mt-2 mt-lg-0">
+          <a href="login.html" class="btn btn-tamarillo btn-sm px-3">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-tomattree">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="sello-origen mb-3 d-inline-flex">Origen · Sutatenza, Boyacá</span>
+        <h1 class="display-5 mt-3">Productores directos.</h1>
+        <p class="lead mt-3">
+          TomatTree conecta el cultivo de tomate de árbol en Sutatenza con distribuidores,
+          restaurantes y clientes de Bogotá — un solo sistema, dos canales de entrega.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="login.html" class="btn btn-tamarillo btn-lg px-4">Soy mayorista</a>
+          <a href="catalogo.html" class="btn btn-outline-verde btn-lg px-4">Ver catálogo minorista</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        
+  <div class="ratio ratio-1x1 rounded" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('img/cosecha.jpg'); background-size: cover;">
+    <div class="d-flex align-items-center justify-content-center text-center p-4">
+      <div>
+        <div class="etiqueta-eyebrow mb-2" style="color: #f0f0f0; font-weight: bold;">LOTE ACTUAL</div>
+        <div class="fuente-titulo" style="font-size:2.4rem; color: #ffffff; font-weight: bold;">04 Jul 2026</div>
+        <div class="mt-2" style="color: #e0e0e0; font-size:0.9rem; font-weight: 500;">Fruta fresca • Pulpa fresca • Pulpa congelada</div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUTA DEL FRUTO -->
+    <div class="ruta-fruto">
+      <div class="parada activa">
+        <div class="punto">1</div>
+        <div class="fw-semibold" style="font-size:0.9rem;">Cosecha</div>
+        <small>Sutatenza</small>
+      </div>
+      <div class="parada">
+        <div class="punto">2</div>
+        <div class="fw-semibold" style="font-size:0.9rem;">Despulpado</div>
+        <small>Bogotá</small>
+      </div>
+      <div class="parada">
+        <div class="punto">3</div>
+        <div class="fw-semibold" style="font-size:0.9rem;">Despacho mayorista</div>
+        <small>Plataforma web</small>
+      </div>
+      <div class="parada">
+        <div class="punto">4</div>
+        <div class="fw-semibold" style="font-size:0.9rem;">Pedido minorista</div>
+        <small>Catálogo WhatsApp</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CÓMO FUNCIONA -->
+<section id="proceso" class="py-5 py-lg-6">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="etiqueta-eyebrow mb-2">Dos canales, un mismo origen</div>
+        <h2 class="mb-4">Cómo funciona TomatTree</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-4">
+          <div class="etiqueta-eyebrow mb-2">Mayorista</div>
+          <h3 class="h5">Acceso con inicio de sesión</h3>
+          <p class="text-secondary mb-0" style="font-size:0.95rem;">
+            Restaurantes, tiendas y distribuidores compran por volumen directamente en la plataforma,
+            con historial de pedidos y despacho programado.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-4">
+          <div class="etiqueta-eyebrow mb-2">Minorista</div>
+          <h3 class="h5">Pedido por catálogo WhatsApp</h3>
+          <p class="text-secondary mb-0" style="font-size:0.95rem;">
+            Clientes de consumo directo revisan el catálogo y hacen su pedido por WhatsApp,
+            sin necesidad de cuenta.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-4">
+          <div class="etiqueta-eyebrow mb-2">Trazabilidad</div>
+          <h3 class="h5">Un solo inventario</h3>
+          <p class="text-secondary mb-0" style="font-size:0.95rem;">
+            Fruta en Sutatenza, fruta en Bogotá, pulpa fresca y pulpa congelada se controlan
+            desde un mismo sistema de stock.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="py-5" style="background-color: var(--verde-suave);">
+  <div class="container py-4">
+    <div class="row mb-4">
+      <div class="col-lg-6">
+        <div class="etiqueta-eyebrow mb-2">Del lote a la caja</div>
+        <h2>Nuestros productos</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-3">
+          <div class="ratio ratio-4x3 rounded mb-3">
+          <img src="img/canasta.jpg" alt="Tomate de árbol cosechado en Sutatenza" class="rounded" style="object-fit: cover; width: 100%; height: 100%;">
+           </div>
+          <span class="badge-precio">Fruta fresca</span>
+          <h3 class="h6 mt-2 mb-1">Tomate de árbol seleccionado</h3>
+          <p class="text-secondary small mb-0">Cosecha directa de la ladera de Sutatenza.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-3">
+          <div class="ratio ratio-4x3 rounded mb-3">
+             <img src="img/pulpafresca.jpg"alt="Tomate de árbol cosechado en Sutatenza" class="rounded" style="object-fit: cover; width: 100%; height: 100%;">
+          </div>
+          <span class="badge-precio">Pulpa fresca</span>
+          <h3 class="h6 mt-2 mb-1">Pulpa despulpada del día</h3>
+          <p class="text-secondary small mb-0">Procesada en la despulpadora de Bogotá.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tarjeta-tomattree p-3">
+          <div class="ratio ratio-4x3 rounded mb-3">
+            <img src="img/pulpacongelada.jpg" alt="Tomate de árbol cosechado en Sutatenza" class="rounded" style="object-fit: cover; width: 100%; height: 100%;">
+          </div>
+          <span class="badge-precio">Pulpa congelada</span>
+          <h3 class="h6 mt-2 mb-1">Reserva de larga duración</h3>
+          <p class="text-secondary small mb-0">Ideal para pedidos recurrentes de mayoristas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-tomattree" id="contacto">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div>
+      <div class="fuente-titulo" style="color:#fff; font-size:1.1rem;">TomatTree</div>
+      <small>Sutatenza, Boyacá — Bogotá, Colombia</small>
+    </div>
+    <div class="d-flex gap-4">
+      <a href="#">WhatsApp</a>
+      <a href="login.html">Acceso mayorista</a>
+      <a href="catalogo.html">Catálogo</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

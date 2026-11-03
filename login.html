@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión — TomatTree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-tomattree py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">TOMAT<span>TREE</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link active" href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5" style="background-color: var(--verde-suave); min-height: 80vh;">
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <span class="sello-origen mb-3 d-inline-flex">Acceso mayorista</span>
+      <h1 class="h3 mt-3">Inicia sesión en tu cuenta</h1>
+      <p class="text-secondary" style="max-width:480px; margin:0 auto;">
+        Este acceso es exclusivo para clientes mayoristas registrados
+        (distribuidores, restaurantes y tiendas).
+      </p>
+    </div>
+
+    <div class="tarjeta-login p-4 p-md-5">
+      <form id="formLogin">
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="nombre@empresa.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="clave" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="clave" placeholder="••••••••" required>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="recordar">
+            <label class="form-check-label small text-secondary" for="recordar">Recordarme</label>
+          </div>
+          <a href="#" class="small" style="color: var(--tamarillo-oscuro);">¿Olvidaste tu contraseña?</a>
+        </div>
+        <button type="submit" class="btn btn-tamarillo w-100 py-2">Iniciar sesión</button>
+      </form>
+
+      <hr class="my-4" style="border-color: var(--gris-claro);">
+
+      <p class="text-center small text-secondary mb-0">
+        ¿Eres cliente minorista? No necesitas cuenta —
+        <a href="catalogo.html" style="color: var(--tamarillo-oscuro);">revisa el catálogo</a>
+        y haz tu pedido por WhatsApp.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-tomattree">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div>
+      <div class="fuente-titulo" style="color:#fff; font-size:1.1rem;">TomatTree</div>
+      <small>Sutatenza, Boyacá — Bogotá, Colombia</small>
+    </div>
+    <div class="d-flex gap-4">
+      <a href="https://wa.me/573000000000" target="_blank">WhatsApp</a>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

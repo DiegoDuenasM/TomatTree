@@ -1,0 +1,213 @@
+/* =========================================================
+   TomatTree — Identidad visual
+   Verde bosque + gris piedra (marca), rojo tamarillo (acento
+   tomado del propio fruto: piel oscura, pulpa naranja-rojiza)
+   ========================================================= */
+
+:root {
+  --verde-oscuro: #17261D;   /* fondo oscuro / navbar / footer */
+  --verde-medio: #2B4536;    /* superficies medias, hover */
+  --verde-suave: #E8EDE7;    /* fondo claro con tinte verde (no crema estándar) */
+  --gris-piedra: #6E766E;    /* texto secundario, bordes */
+  --gris-claro: #C9CFC7;     /* líneas, divisores */
+  --tamarillo: #C1442E;      /* acento — color de la pulpa del fruto */
+  --tamarillo-oscuro: #9C3423;
+  --papel: #F5F4EF;
+
+  --fuente-titulo: 'Source Serif 4', Georgia, serif;
+  --fuente-sello: 'Oswald', sans-serif;
+  --fuente-cuerpo: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  color: var(--verde-oscuro);
+  background-color: var(--papel);
+}
+
+h1, h2, h3, .fuente-titulo {
+  font-family: var(--fuente-titulo);
+  font-weight: 600;
+  color: var(--verde-oscuro);
+}
+
+/* ---------- Navbar ---------- */
+.navbar-tomattree {
+  background-color: var(--verde-oscuro);
+}
+.navbar-tomattree .navbar-brand {
+  font-family: var(--fuente-sello);
+  letter-spacing: 0.06em;
+  color: var(--papel) !important;
+  font-size: 1.3rem;
+}
+.navbar-tomattree .navbar-brand span {
+  color: var(--tamarillo);
+}
+.navbar-tomattree .nav-link {
+  color: var(--gris-claro) !important;
+  font-size: 0.95rem;
+}
+.navbar-tomattree .nav-link:hover,
+.navbar-tomattree .nav-link.active {
+  color: var(--papel) !important;
+}
+.btn-tamarillo {
+  background-color: var(--tamarillo);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-tamarillo:hover {
+  background-color: var(--tamarillo-oscuro);
+  color: #fff;
+}
+.btn-outline-verde {
+  border: 1.5px solid var(--verde-suave);
+  color: var(--papel);
+  font-weight: 600;
+}
+.btn-outline-verde:hover {
+  background-color: var(--verde-suave);
+  color: var(--verde-oscuro);
+}
+
+/* ---------- Sello de origen (elemento firma) ---------- */
+.sello-origen {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1.5px dashed var(--tamarillo);
+  color: var(--tamarillo-oscuro);
+  font-family: var(--fuente-sello);
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+}
+.sello-origen::before {
+  content: "●";
+  font-size: 0.5rem;
+}
+
+/* ---------- Hero ---------- */
+.hero-tomattree {
+  background-color: var(--verde-oscuro);
+  color: var(--papel);
+  padding: 5rem 0 6rem;
+}
+.hero-tomattree h1 {
+  color: var(--papel);
+}
+.hero-tomattree p.lead {
+  color: var(--gris-claro);
+}
+
+/* ---------- Ruta del fruto (proceso) ---------- */
+.ruta-fruto {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.ruta-fruto::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background-image: linear-gradient(to right, var(--gris-piedra) 60%, transparent 0%);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+}
+.ruta-fruto .parada {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+.ruta-fruto .punto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--verde-medio);
+  border: 2px solid var(--gris-claro);
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-sello);
+  font-size: 0.85rem;
+  color: var(--papel);
+}
+.ruta-fruto .parada.activa .punto {
+  background: var(--tamarillo);
+  border-color: var(--tamarillo);
+}
+.ruta-fruto .parada small {
+  color: var(--gris-claro);
+  font-size: 0.75rem;
+}
+
+/* ---------- Tarjetas de producto / proceso ---------- */
+.tarjeta-tomattree {
+  border: 1px solid var(--gris-claro);
+  border-radius: 6px;
+  background: #fff;
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.tarjeta-tomattree:hover {
+  box-shadow: 0 10px 24px rgba(23, 38, 29, 0.12);
+  transform: translateY(-3px);
+}
+.etiqueta-eyebrow {
+  font-family: var(--fuente-sello);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--tamarillo-oscuro);
+}
+.badge-precio {
+  font-family: var(--fuente-sello);
+  background-color: var(--verde-suave);
+  color: var(--verde-oscuro);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+/* ---------- Footer ---------- */
+.footer-tomattree {
+  background-color: var(--verde-oscuro);
+  color: var(--gris-claro);
+  padding: 2.5rem 0;
+  font-size: 0.9rem;
+}
+.footer-tomattree a {
+  color: var(--gris-claro);
+  text-decoration: none;
+}
+.footer-tomattree a:hover {
+  color: var(--tamarillo);
+}
+
+/* ---------- Formulario login ---------- */
+.tarjeta-login {
+  border: 1px solid var(--gris-claro);
+  border-radius: 8px;
+  background: #fff;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.tarjeta-login .form-label {
+  font-size: 0.85rem;
+  color: var(--gris-piedra);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tarjeta-login .form-control:focus {
+  border-color: var(--tamarillo);
+  box-shadow: 0 0 0 0.2rem rgba(193, 68, 46, 0.15);
+}
